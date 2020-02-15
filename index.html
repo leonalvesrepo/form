@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sócios - Clube Esportivo Universitário</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">CEU</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">CEU</span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- The user image in the navbar-->
+              <img src="dist/img/avatar5.png" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs">Fulano Junior</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- The user image in the menu -->
+              <li class="user-header">
+                <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
+
+                <p>
+                  Leonato - Web Developer
+                  <small>Membro desde Junho de 2018</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Perfil</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sair</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Fulano Junior</p>
+          <!-- Status -->
+          <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">MENU</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li class="active"><a href="#"><i class="fa fa-users"></i> <span>Sócios</span></a></li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Sócios CEU
+        <small>Gerenciamento de sócios do clube</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+        <li class="active">Sócios CEU</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+      <div class="row">
+        <div class="col-md-8">
+
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Lista de Sócios</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th style="width: 10px">Foto</th>
+                    <th>Nome</th>
+                    <th>Plano</th>
+                    <th>Telefone</th>
+                    <th>Adesão</th>
+                    <th>Renovação</th>
+                    <th>Vencimento</th>
+                    <th>Mensalidade</th>
+                    <th>tacad</th>
+                    <th>fceu</th>
+                  </tr>
+                </thead>
+                <tbody id="table-users">
+
+                </tbody>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+
+        </div>
+        <div class="col-md-4">
+
+          <div class="row">
+
+            <!-- ./col -->
+            <div class="col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-green">
+                <div class="inner">
+                  <h3>44</h3>
+
+                  <p>Novos Usuários</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-person-add"></i>
+                </div>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-yellow">
+                <div class="inner">
+                  <h3>15</h3>
+
+                  <p>Administradores</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-pie-graph"></i>
+                </div>
+              </div>
+            </div>
+            <!-- ./col -->
+          </div>
+
+          <div class="box box-success">
+            <div class="box-header with-border">
+              <h3 class="box-title">Novo Usuário</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form" id="form-user-create">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="exampleInputName">Nome</label>
+                  <input type="text" class="form-control" id="exampleInputName" placeholder="Digite o nome do usuário" name="name">
+                </div>
+                <div class="form-group">
+                  <label>Tipo de Plano</label>
+                  <div class="radio">
+                    <label for="exampleInputTplanoS">
+                      <input type="radio" id="exampleInputTplanoS" name="tplanos">
+                      Semestral</label>
+                  </div>
+                  <div class="radio">
+                    <label for="exampleInputTplanoA">
+                      <input type="radio" id="exampleInputTplanoA" name="tplanos">
+                      Anual</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputTelefone">Telefone</label>
+                  <input type="number" class="form-control" id="exampleInputTelefone" name="telefone">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">E-mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite o e-mail" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputTpass">Tipo de Passaporte</label>
+                  <select class="form-control" id="exampleInputTpass" name="tpass">
+                    <option value="" selected="selected">Selecione um tipo</option>
+                    <option value="Passaporte Simples">Passaporte Simples</option>
+                    <option value="Passaporte Completo">Passaporte Completo</option>
+                    <option value="Passaporte exampleInputVencimento">Passaporte PMT</option>
+                    <option value="Passaporte UNIFESO">Passaporte UNIFESO</option>
+                    <option value="Passaporte Academia">Passaporte Academia</option>
+                    <option value="Passaporte JiuJitsu">Passaporte Jiu-Jitsu</option>
+                    <option value="Passaporte Capoeira">Passaporte Capoeira</option>
+                    <option value="Passaporte Escolinha de Futebol">Passaporte Escolinha de Futebol</option>
+                    <option value="Passaporte Natação">Passaporte Natação</option>
+                    <option value="Passaporte Hidroginástica">Passaporte Hidroginástica</option>
+                    <option value="Passaporte Parkour">Passaporte Parkour</option>
+                    <option value="Passaporte Universitario">Passaporte Universitário</option>
+
+                  </select>
+                </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputFile">Foto</label>
+                  <input type="file" id="exampleInputFile" name="photo">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputAdesao">Adessão</label>
+                  <input type="date" class="form-control" id="exampleInputAdesao" placeholder="Digite aqui a data de início no CEU" name="adesao">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputbRenovacao">Renovação</label>
+                  <input type="date" class="form-control" id="exampleInputbRenovacao" placeholder="Data de renovação do passaporte" name="renova">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputVencimento">Vencimento</label>
+                  <input type="date" class="form-control" id="exampleInputVencimento" placeholder="data de vencimento" name="vencimento">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputMensalidade">Mensalidade</label>
+                  <input type="number" class="form-control" id="exampleInputMensalidade" placeholder="Valor intagral" name="mensalidade">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputTacad">Taxa Adacemia</label>
+                  <input type="number" class="form-control" id="exampleInputTacad" placeholder="Taxa em real da academia" name="tacad">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputVceu">Valor final CEU</label>
+                  <input type="number" class="form-control" id="exampleInputVceu" placeholder="Final CEU" name="fceu">
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="admin"> Administrador
+                  </label>
+                </div>
+
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="submit" class="btn btn-success">Salvar</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+      <a target="_blank" href="https://souceucom.br">CEU</a>
+    </div>
+    <!-- Default to the left -->
+    Projeto desenvolvido por TI Solution.
+  </footer>
+
+</div>
+<script src="models/User.js"></script>
+<script src="controllers/UserController.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
